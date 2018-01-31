@@ -84,6 +84,7 @@ public class Main {
             String class_name = null;
             String method_name = null;
 
+            // localhost:8000/controller/method?arg1=val&arg2=val2
 
             // Parse URL Arguments
             Map<String, Object> parameters = new HashMap<String, Object>();
@@ -108,7 +109,7 @@ public class Main {
             try {
                 Class noparams[] = {};
 
-                // Fin Controller class based on name, then instantiate it...
+                // Find Controller class based on name, then instantiate it...
                 Class execution = Class.forName("org.mvc.controllers." + capitalize_stirng(class_name) + "Controller");
                 Object obj = execution.newInstance();
 

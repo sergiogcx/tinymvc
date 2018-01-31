@@ -13,7 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 /*
-    Java Object <-> Json <-> Redis (key : value)
+    User <-> Json <-> Redis (key : value)
 
     User <-> Model <-> Redis (email : json document)
 */
